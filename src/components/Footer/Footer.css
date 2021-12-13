@@ -1,0 +1,15 @@
+footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #828282;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #828282;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}

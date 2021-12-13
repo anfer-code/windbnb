@@ -1,0 +1,113 @@
+.Modal {
+    background-color: #FFFFFF;
+    position: absolute;
+    right: -10px;
+    height: 632px;
+    left: -11px;
+    top: 0px;
+    z-index: 10;
+}
+
+.Modal::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 600px;
+    background-color: rgba(0, 0, 0, 0.288);
+    height: 500px;
+}
+
+.Modal--header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 0;
+}
+
+.Modal--header p {
+    color: #333333;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+button {
+    border: none;
+    outline: none;
+    width: 24px;
+    flex-basis: 10%;
+    background-color:#FFFFFF;
+}
+
+.Modal--Options {
+    position: absolute;
+    top: calc(340px - 92px);
+    left: calc(50% - 80px);
+    width: 160px
+}
+
+
+.Modal--Options li {
+    list-style: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.Modal--Options li button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.Modal--Options li button:hover {
+    cursor: pointer;
+}
+
+
+.Modal--Options li span {
+    margin-right: 15px;
+}
+
+/* Control Guests */
+
+.Modal--control {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.Modal--control:last-child {
+    margin-bottom: 0;
+}
+
+.Modal--control h4 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.Modal--control label {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #707070;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.Modal--buttons > *{
+    margin-right: 10px;
+}
+
+.Modal--buttons button {
+    border: 1px solid #828282;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+}

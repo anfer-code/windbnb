@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useState } from "react";
+import { useState, createContext } from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import asset from './assets/stays.json';
+
+
+const Context = createContext()
 
 function App() {
+  const [listItems, setListItems] = useState(asset)
+  const [listArr, setListArr] = useState(asset)
+  const [isOpen, setIsOpen] = useState(false);
+
+  console.log(typeof asset[0].maxGuests)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Context.Provider 
+        value={{
+          listItems,
+          setListItems,
+          listArr,
+          setListArr,
+          isOpen,
+          setIsOpen
+        }}>
+        <Header />
+        <Main />
+        <Footer />
+      </Context.Provider>
+    </>
   );
 }
 
-export default App;
+export  {App, Context};

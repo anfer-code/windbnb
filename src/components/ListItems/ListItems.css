@@ -1,0 +1,15 @@
+.ListItems {
+    width: 100%;
+    display: flex;
+    gap: 30px; 
+    row-gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 
+@media (min-width: 1300px) {
+    .ListItems {    
+        justify-content: space-between;
+    }
+} */

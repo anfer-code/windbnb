@@ -1,0 +1,46 @@
+.Guests {
+    border: 1px solid #f2f2f2;
+    width: 100%;
+    height: 55px;
+    padding: 20px 20px 10px;
+    outline: none;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+
+.Guests:focus {
+    border: 1px solid #333333af;
+}
+
+.Guests.open {
+    width: 100%;
+    border-radius: 0 0 16px 16px;
+}
+
+@media (min-width: 800px) {
+    
+    .Guests.open {
+        border-radius: 0;
+    }
+}
+
+.Guests--label {
+    font-size: 9px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    color: #333333;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+    left: 28px;
+}
+
+.Guests--container {
+    flex-basis: 40%;
+}
+
+.Guests--container.open {
+    position: relative;
+}
