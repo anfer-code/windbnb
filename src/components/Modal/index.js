@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Modal.css'
 
+// Componentes que se renderizarán dependiendo del input al que se le hizo click
 function OptionsLocation({setLocation}){
     return (
         <>

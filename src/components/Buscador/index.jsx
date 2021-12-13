@@ -12,13 +12,20 @@ import asset from '../../assets/stays.json';
 
 export default function Buscador() {
 
-    const { listItems, setListItems, setListArr: setListArrRender, isOpen, setIsOpen } = useContext(Context);
+    // States of this and children components
+    const { 
+        listItems, 
+        setListItems, 
+        setListArr: setListArrRender, 
+        isOpen, 
+        setIsOpen } = useContext(Context);
+
     const [isOpenLocation, setIsOpenLocation] = useState(false);
     const [isOpenGuests , setIsOpenGuests] = useState(false);
     const [location, setLocation] = useState("");
     const [guest, setGuest] = useState(0);
 
-
+    // Manejador para el boton filtrador | Handler to Filter button
     const filterByLocation = (locat, guesters) => {
         if(locat && !guesters) {
             const arr = listItems.filter((item) => item.city.toLowerCase().includes(locat.toLowerCase()));
